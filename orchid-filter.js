@@ -22,7 +22,7 @@ function myFunction() {
 
 function sortTable() {
   var table, rows, switching, i, x, y, shouldSwitch;
-  table = document.getElementById("myTable");
+  table = document.getElementsByClass(".table table-hover");
   switching = true;
   /* Make a loop that will continue until
   no switching has been done: */
