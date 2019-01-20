@@ -1,5 +1,5 @@
 header, footer{
-  background: linear-gradient(-85deg, purple, #1ab7db); 
+  background: linear-gradient(-85deg,  #4CAF50, #1ab7db); 
   border-radius: 5px;
   box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
   text-align: center;
@@ -29,7 +29,7 @@ header, footer{
     box-shadow:0 2px 10px 0 grey,0 2px 10px 0 grey;
   }
   
-  .table {
+  #myTable {
     background-position: 10px 12px; /* Position the search icon */
     background-repeat: no-repeat; /* Do not repeat the icon image */
     font-size: 16px; /* Increase font-size */
@@ -39,24 +39,24 @@ header, footer{
     margin-top: 20px;
     justify-content: center;
     color: black;
-    width: 80%;
+    width: 90%;
     margin: 90px;
     border-radius: 5px;
     background-color: white; 
     box-shadow:0 2px 10px 0 grey,0 2px 10px 0 grey;
   }
   
-  .table th, td {
+  #myTable th, td {
     text-align: left; /* Left-align text */
     padding: 12px; /* Add padding */
   }
   
-  .table tr {
+  #myTable tr {
     /* Add a bottom border to all table rows */
     border-bottom: 1px solid #ddd; 
   }
   
-  .table tr.header, .table tr:hover {
+  #myTable tr.header, #myTable tr:hover {
     /* Add a grey background color to the table header and on hover */
     background-color: #f1f1f1;
   }
@@ -73,13 +73,26 @@ header, footer{
     justify-content: center;
     border-radius: 5px;
     background-color: transparent; 
-    box-shadow:0 2px 10px 0 grey,0 2px 10px 0 grey;
+    /* box-shadow:0 2px 10px 0 grey,0 2px 10px 0 grey; */
 
   }
-  button:hover {background: linear-gradient(-85deg, purple, #1ab7db); }
+  button:hover {background: linear-gradient(-85deg, #4CAF50, #1ab7db); }
 
   button:active {
-  background: linear-gradient(-85deg, purple, #1ab7db); 
-  box-shadow: 0 5px #666;
+  background: linear-gradient(-85deg,   #4CAF50, #1ab7db); 
+  /* box-shadow: 0 5px #666; */
   transform: translateY(4px);
+}
+
+table.dataTable thead .sorting:after,
+table.dataTable thead .sorting:before,
+table.dataTable thead .sorting_asc:after,
+table.dataTable thead .sorting_asc:before,
+table.dataTable thead .sorting_asc_disabled:after,
+table.dataTable thead .sorting_asc_disabled:before,
+table.dataTable thead .sorting_desc:after,
+table.dataTable thead .sorting_desc:before,
+table.dataTable thead .sorting_desc_disabled:after,
+table.dataTable thead .sorting_desc_disabled:before {
+  bottom: .5em;
 }
