@@ -12,9 +12,10 @@
 </head>
 <body>
 
-    <header><h3>My Orchid List</h3><button onclick="sortTable()">Sort</button>
+    <header><h3>My Orchid List</h3>
+      <!-- <button onclick="sortTable()">Sort</button> -->
     </header>
-    
+
     <form method="POST" action="/create">
 
       <input type="text" name="orchid" placeholder="Add a new Orchid">
@@ -34,10 +35,10 @@
         <thead>
           <tr>
             <th></th>
-            <th>Number</th>
-            <th>Genus</th>
-            <th>Species</th>
-            <th>Cultivar</th>
+            <th onclick="sortTable(1)">Number</th>
+            <th onclick="sortTable(2)">Genus</th>
+            <th onclick="sortTable(3)">Species</th>
+            <th onclick="sortTable(4)">Cultivar</th>
             <th>Notes</th>
           </tr>
         </thead>
