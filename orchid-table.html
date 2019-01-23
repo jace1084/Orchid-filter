@@ -14,9 +14,20 @@
 
     <header><h3>My Orchid List</h3><button onclick="sortTable()">Sort</button>
     </header>
+    
+    <form method="POST" action="/create">
 
+      <input type="text" name="orchid" placeholder="Add a new Orchid">
+      <input type="text" name="Genus" placeholder="what's the Genus">
+      <input type="text" name="Species" placeholder="which Species">
+      <input type="text" name="Cultivar" placeholder="what's the Cultivar">
+      <input type="text" name="Notes" placeholder="Insert your Notes">
+      
+      <button>submit</button>
+
+    </form>
     <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
-    <input type="text" id="myInput" placeholder="Insert a new Orchid">
+    <!-- <input type="text" id="myInput" placeholder="Insert a new Orchid"> -->
     
 
     <table id="myTable" cellspacing="0" width="100%">
