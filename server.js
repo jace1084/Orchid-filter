@@ -44,7 +44,7 @@ app.get('/orchids', function(req, res){
 });
 
 app.get('/', function(req, res){
-	res.sendFile(path.join(__dirname, "/orchid-table.html"));
+	res.sendFile(path.join(__dirname, "public/orchid-table.html"));
 });
 
 app.post('/create', function(req, res){
