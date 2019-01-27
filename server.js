@@ -32,3 +32,30 @@ var connection = mysql.createConnection({
   password: "password",
   database: "orchids_db"
 });
+
+app.get('/orchids', function(req, res){
+
+  connection.query('SELECT * FROM orchids', function (error, results, fields) {
+    if (error) throw error;
+    
+    res.json(results);
+  });
+
+});
+
+app.get('/', function(req, res){
+	res.sendFile(path.join(__dirname, "/orchid-table.html"));
+});
+
+app.post('/create', function(req, res){
+	console.log(req.body);
+
+
+	var query = connection.query(
+	  "INSERT INTO questions SET ?",
+	  req.body,
+	  function(err, response) {
+	    res.redirect('/');
+	  }
+	);
+})
