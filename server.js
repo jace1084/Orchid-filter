@@ -30,5 +30,5 @@ var connection = mysql.createConnection({
 
   // Your password
   password: "password",
-  database: "questions_code_db"
+  database: "orchids_db"
 });
