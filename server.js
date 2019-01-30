@@ -52,8 +52,8 @@ app.post('/create', function(req, res){
 
 
 	var query = connection.query(
-	  "INSERT INTO questions SET ?",
-	  req.body,
+	  "INSERT INTO genus SET ?",
+	  req.body.Genus,
 	  function(err, response) {
 	    res.redirect('/');
 	  }
