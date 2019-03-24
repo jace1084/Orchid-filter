@@ -1,4 +1,4 @@
-header, footer{
+header{
   background: linear-gradient(-85deg,  #4CAF50, #1ab7db); 
   border-radius: 5px;
   box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
@@ -7,7 +7,37 @@ header, footer{
   color: white;
   width: 100%;
   padding: 10px;
+}
 
+footer{
+  background: linear-gradient(-85deg,  #4CAF50, #1ab7db); 
+  border-radius: 5px;
+  box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+  text-align: center;
+  font-size: 1.5rem;
+  color: white;
+  width: 100%;
+  padding: 10px;
+  bottom: 0;
+  position: fixed;
+
+}
+
+.orchidAdditon{
+  padding-top: 5%;
+  margin-left: 90px;
+  text-align: center;
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  margin-bottom: 12px; /* Add some space below the input */
+  margin-top: 20px;
+  justify-content: center;
+  color: black;
+  width: 90%;
+  margin-left: 90px;
+  border-radius: 5px;
+  background-color: white; 
+  text-align: center;
 }
 
 #myInput {
@@ -27,6 +57,7 @@ header, footer{
     border-radius: 5px;
     background-color: white; 
     box-shadow:0 2px 10px 0 grey,0 2px 10px 0 grey;
+    text-align: center;
   }
   
   #myTable {
