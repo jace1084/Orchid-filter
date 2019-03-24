@@ -52,10 +52,14 @@ app.post('/create', function(req, res){
 
 
 	var query = connection.query(
-	  "INSERT INTO genus SET ?",
+	  "INSERT INTO Genus SET ?",
 	  req.body.Genus,
 	  function(err, response) {
 	    res.redirect('/');
 	  }
 	);
 })
+
+app.listen(3000, function(){
+	console.log('listening on 3000');
+});
